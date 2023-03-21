@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FCM_test01</string>
+    <string name="msg_token_fmt">BEBZ42LZ6n5ZBfNg5SHrtLLL4QOuAWok7_2saRzLtPb2RHxWaAo3Y1TDVSgnPrqnEVwP5LHKNqa_us9478OMksY</string>
 </resources>
