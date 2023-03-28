@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        setFCM();
+        //setFCM();
     }
 
     /** FCM **/
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
     /** 구독 로직 **/
     public void 구독(){
-        FirebaseMessaging.getInstance().subscribeToTopic("weather")
+        FirebaseMessaging.getInstance().subscribeToTopic("weather11111")
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
