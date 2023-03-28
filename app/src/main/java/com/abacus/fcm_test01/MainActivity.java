@@ -25,6 +25,7 @@ import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainActivity extends AppCompatActivity {
 
+    Button bt_saveSchedule;
     Context context;
 
     @Override
@@ -32,6 +33,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         context = this;
+        bt_saveSchedule = findViewById(R.id.bt_saveSchedule);
+        bt_saveSchedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                구독();
+            }
+        });
 
         setFCM();
     }
@@ -48,6 +56,22 @@ public class MainActivity extends AppCompatActivity {
                         }else {
                             Log.e("디바이스토큰", task.getResult());
                         }
+                    }
+                });
+    }
+
+    /** 구독 로직 **/
+    public void 구독(){
+        FirebaseMessaging.getInstance().subscribeToTopic("weather")
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        String msg = "구독 성공";
+                        if (!task.isSuccessful()) {
+                            msg = "구독 실패";
+                        }
+                        Log.d(TAG, msg);
+                        Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
                     }
                 });
     }

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "407443619684",
+    "project_id": "fcm-abacus",
+    "storage_bucket": "fcm-abacus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407443619684:android:78db08b90261a33ecc4471",
+        "android_client_info": {
+          "package_name": "com.abacus.fcm_test01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407443619684-59n9pgf6hdoi280ohn2968msh5c5k4ia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALxxxu4N6blLkUneS5ri2u0guOpUcAdWU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407443619684-59n9pgf6hdoi280ohn2968msh5c5k4ia.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
